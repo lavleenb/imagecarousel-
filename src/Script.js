@@ -1,25 +1,27 @@
+import React from "react";
 let slideIndex = 1;
-showSlides(slideIndex);
+ShowSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+export function PlusSlides(n) {
+    ShowSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+export function CurrentSlide(n) {
+    ShowSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+function ShowSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
+  let slides = document.getElementsByClassName("slides");
   let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
+  const lineRefs = React.useRef(slides);
+
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    lineRefs.current[i].display = "none";
   }
+  
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
