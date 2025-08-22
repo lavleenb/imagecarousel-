@@ -1,5 +1,9 @@
 * {box-sizing:border-box}
 
+img {
+  width: 50%
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -39,14 +43,16 @@
 }
 
 /* Caption text */
-.text {
+.caption {
   color: #f2f2f2;
-  font-size: 15px;
+  background-color: black;
+  font-size: 30px;
   padding: 8px 12px;
-  position: absolute;
+  position: bottom;
   bottom: 8px;
   width: 100%;
   text-align: center;
+  
 }
 
 /* Number text (1/3 etc) */
