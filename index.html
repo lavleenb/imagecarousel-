@@ -3,37 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Image Carousel</title>
     <link rel='stylesheet' href='./style.css'>
-    <script src='./script.js'></script>
+    <title>Image Carousel</title>
   </head>
   <body>
-    <div className='slideshow container'>
-      <div className='slides swipe'>
-        <div className='numbertext'>1 / 8</div>
-        <img src=".assets/img1.jpeg" alt='' style="width: 100%;"></img>
-        <div className='caption'>canton liberty fest</div>
+    <div class='slideshow container'>
+      <div class='mySlides fade'>
+        <div class='numbertext'>1 / 8</div>
+        <img src="./assets/img1.jpeg" alt='' style="width: 100%;"></img>
+        <div class='caption'>canton liberty fest</div>
       </div>
-      <div className='slides swipe'>
-        <div className='numbertext'>2 / 8</div>
-        <img src="../assets/img2.jpg" alt='' style="width: 100%;"></img>
-        <div className='caption'>neha didi's maiyan rangoli</div>
+      <div class='mySlides fade'>
+        <div class='numbertext'>2 / 8</div>
+        <img src="./assets/img2.jpeg" alt='' style="width: 100%;"></img>
+        <div class='caption'>neha didi's maiyan rangoli</div>
       </div>
-      <div className='slides swipe'>
-        <div className='numbertext'>3 / 8</div>
-        <img src="../assets/img3.jpg" alt='' style="width: 100%;"></img>
-        <div className='caption'>canton liberty fest</div>
+      <div class='mySlides fade'>
+        <div class='numbertext'>3 / 8</div>
+        <img src="./assets/img3.jpeg" alt='' style="width: 100%;"></img>
+        <div class='caption'>pretty in pink</div>
+      </div>
+      <div class='mySlides fade'>
+        <div class='numbertext'>4 / 8</div>
+        <img src="./assets/img4.jpeg" alt='' style="width: 100%;"></img>
+        <div class='caption'>ducky visitors</div>
+      </div>
+      <div class='mySlides fade'>
+        <div class='numbertext'>5 / 8</div>
+        <img src="./assets/img5.jpeg" alt='' style="width: 100%;"></img>
+        <div class='caption'>duck face w bandhan and nani</div>
+      </div>
+      <div class='mySlides fade'>
+        <div class='numbertext'>6 / 8</div>
+        <img src="./assets/img6.jpeg" alt='' style="width: 100%;"></img>
+        <div class='caption'>post-bath mango</div>
+      </div>
+      <div class='mySlides fade'>
+        <div class='numbertext'>7 / 8</div>
+        <img src="./assets/img7.jpeg" alt='' style="width: 100%;"></img>
+        <div class='caption'>gage park holiday lights</div>
+      </div>
+      <div class='mySlides fade'>
+        <div class='numbertext'>8 / 8</div>
+        <img src="./assets/img8.jpeg" alt='' style="width: 100%;"></img>
+        <div class='caption'>spirit halloween</div>
       </div>
 
-      <a className='prev' onClick=PlusSlides(-1)>&#10094;</a>
-      <a className='next' onClick=PlusSlides(1)>&#10095;</a>
-
-      <div>
-        <span class="dot" onClick=CurrentSlide(1)></span>
-        <span class="dot" onClick=CurrentSlide(2)></span>
-        <span class="dot" onClick=CurrentSlide(3)></span>
-      </div>
+      <a class='prev' onClick="plusSlides(-1)">&#10094;</a>
+      <a class='next' onClick="plusSlides(1)">&#10095;</a>
     </div>
+    <br>
+
+    <div style="text-align: center;">
+      <span class="dot" onClick="currentSlide(1)"></span>
+      <span class="dot" onClick="currentSlide(2)"></span>
+      <span class="dot" onClick="currentSlide(3)"></span>
+    </div>
+    <script src='./script.js'></script>
   </body>
 </html>
