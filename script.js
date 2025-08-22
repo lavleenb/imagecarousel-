@@ -1,4 +1,3 @@
-import React from "react";
 let slideIndex = 1;
 ShowSlides(slideIndex);
 
