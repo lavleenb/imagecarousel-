@@ -44,7 +44,7 @@ img {
 }
 
 /* Caption text */
-.caption {
+.caption, p {
   color: #f2f2f2;
   background-color: #8F2222;
   font-size: 12px;
